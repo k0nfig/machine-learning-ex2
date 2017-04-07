@@ -12,12 +12,11 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
-
-
-
-
-
-
+title("EX2");
+pos = find(y==1);
+neg = find(y==0);
+plot(X(pos, 1), X(pos, 2), '+b', 'MarkerSize', 10);
+plot(X(neg, 1), X(neg, 2), 'or', 'MarkerSize', 10);
 
 
 % =========================================================================
